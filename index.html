@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlases</title>
+<meta name="description" content="Maps of things that are connected: who descends from whom, who taught whom.">
+<style>
+  :root {
+    color-scheme: light;
+    --surface: #fcfcfb; --page: #f9f9f7;
+    --ink: #0b0b0b; --ink-2: #52514e; --muted: #6e6c66;
+    --border: rgba(11,11,11,.10); --wash: rgba(11,11,11,.045);
+    --rule: #c3c2b7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --surface: #1a1a19; --page: #0d0d0d;
+      --ink: #fff; --ink-2: #c3c2b7; --muted: #898781;
+      --border: rgba(255,255,255,.10); --wash: rgba(255,255,255,.06);
+      --rule: #383835;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--page); color: var(--ink);
+    font: 15px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: flex; justify-content: center; padding: 8vh 20px 6vh;
+  }
+  main { width: 100%; max-width: 640px; }
+  h1 { font-size: 22px; font-weight: 600; letter-spacing: -.01em; margin: 0 0 6px; }
+  .lede { color: var(--ink-2); margin: 0 0 34px; font-size: 15px; }
+  .card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px 20px; margin-bottom: 14px;
+  }
+  .card:hover { background: var(--wash); border-color: var(--rule); }
+  .card h2 { font-size: 17px; font-weight: 600; margin: 0 0 5px; }
+  .card p { margin: 0; color: var(--ink-2); font-size: 14px; }
+  .card .n { color: var(--muted); font-size: 12.5px; margin-top: 9px; display: block; }
+  footer { color: var(--muted); font-size: 12.5px; margin-top: 30px; line-height: 1.7; }
+  @media (max-width: 480px) { body { padding-top: 5vh; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Atlases</h1>
+  <p class="lede">Maps of things that are connected: who descends from whom, who
+    taught whom, and what survives of what they made.</p>
+
+  <a class="card" href="dance/">
+    <h2>Dance Atlas</h2>
+    <p>How modern dance was handed on, person to person — placed by when each
+      dancer worked, joined by who taught whom, and graded by how much of each
+      work still exists.</p>
+    <span class="n">401 people · 910 works · 116 places · a 65-chapter tour across two documentaries</span>
+  </a>
+
+  <a class="card" href="greek/">
+    <h2>Theogony Atlas</h2>
+    <p>The Greek myths drawn as descent — figures placed by generation and joined
+      by blood, union, violence and the other ties the sources record, which
+      contradict each other constantly.</p>
+    <span class="n">306 figures · 311 story ties · 93 objects and places · a 35-chapter tour</span>
+  </a>
+
+  <footer>
+    Every claim on both maps names its source. Where the record is doubtful, it
+    says so rather than choosing for you.
+  </footer>
+</main>
+</body>
+</html>
